@@ -1,0 +1,88 @@
+  .avatar {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+  }
+  
+  section{
+    column-width: 300px;
+    column-gap: 5px;
+    padding: 5px;
+  }
+  
+  section img{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    margin-bottom:0px;
+    margin-top:1px;
+    font-weight:400;
+  }
+
+  .search-results {
+    overflow-y: scroll;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    top: 45%;
+    left: 45%;
+    position: fixed;
+  }
+
+  @keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+.box .icon,.box .titles{
+  margin:0;
+  position:absolute
+}
+.box{
+  position:relative
+}
+.box .box-content{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.6);
+  opacity:0;
+  position:absolute;
+  top:0;
+  transform:perspective(400px) rotateX(-90deg);
+  transform-origin:center top 0;
+  transition:all .5s ease 0s
+}
+.box .icon li i,.box .titles{
+  background:#ef4050;
+  font-size:15px;
+  color:#fff
+}
+.box:hover .box-content{
+  opacity:1;
+  transform:perspective(400px) rotateX(0)
+}
+.box .titles{
+  padding:2px 5px;
+  border-radius:5px;
+  bottom:20px;
+  left:15px;
+}
+.box .icon{
+  list-style:none;
+  padding:0;
+  top:40%;
+  left:42%;
+}
+.box .icon li i{
+  width:40px;
+  line-height:40px;
+  border-radius:20%;
+}

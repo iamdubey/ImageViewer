@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="udetails">
+      <img src="{{ udata?.profile_image }}" class="rounded-circle" alt="profile pic">
+      <h3><strong>{{ udata?.name }}</strong></h3>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+<hr>
+<section>
+  <section>
+    <img *ngFor="let imgurl of temp" [src]="imgurl.urls.regular" />
+  </section>
+</section>

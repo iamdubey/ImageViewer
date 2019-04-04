@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-md border-bottom border-dark">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <form #myform="ngForm" (ngSubmit)="searchImage(myform.value)" class="form-inline" style="width: 100%">
+        <input type="text" class="form-control mr-sm-2 border border-dark" name="queryText" placeholder="Search Images"
+        ngModel>
+        <div class="input-group-btn">
+          <button class="btn btn-default border border-dark" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </li>
+  </ul>
+</nav>
